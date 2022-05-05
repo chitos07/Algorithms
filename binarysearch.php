@@ -13,12 +13,8 @@
             $mid = ceil(($low + $high) / 2);
             
             $gusse = $list[$mid];
-          
-            echo $low;
-            echo '<pre>';
             if($gusse == $number){
                return $mid;
-                
             }elseif($gusse > $number){
                 $high = $mid - 1;
             }
